@@ -1,0 +1,453 @@
+/*General*/
+:root{
+    --DarkBlue:#173248;
+    --LightBlue:#238596;
+    --Gold:#F5D098;
+    --Gray:rgba(255, 255, 255, 0.795);
+    --Transparent:rgba(69, 142, 156, 0.5);
+}
+body {
+/*Structure*/
+    margin:0;
+    background-image: url("../images/BG.jpg");
+    background-size: auto 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+/*Content*/
+    font-size: 4vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:white;
+}
+body dt,h1,h3,a,button,th{
+    color: var(--Gold);
+}
+a{
+    text-decoration: none;
+}
+main{
+    padding: 10% 0 15% 0;
+}
+img{
+    width:90%;
+    height: auto;
+}
+blockquote{
+    width:90%;
+    margin: 0 auto;
+    text-align: justify;
+}
+nav {
+/*Structure*/
+    width: 100%;
+    background-color: var(--DarkBlue);
+    overflow:auto;
+    box-shadow: 0px 5px 10px black;
+    padding: 1% 0;
+/*Content*/
+    color: white;
+}
+.current{
+    padding:1.5%;
+    border-radius: 25px;
+    background-color: var(--LightBlue);
+}
+.NotMobile{
+    display:none;
+}
+.line{
+    width: 80%;
+    margin:0 auto 5% auto;
+    height: 2px;
+    background-color: white;
+}
+.title{
+    /*Structure*/
+    width: 90vw;
+    height: 20vw;
+    margin: 0 auto 5% auto;
+    background-size: auto 65vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 10vw;
+    /*Content*/
+    padding-top: 10%;
+    font-weight: bold;
+    color:white;
+}
+#logo{
+    width: 50vw;
+    margin:0 auto;
+    height: auto;
+}
+#copyright{
+    color: var(--Gray);
+    font-size: 70%;
+    margin: 0 auto;
+}
+#git{
+    float:right;
+    margin: -6% 15% 0 0;
+    width:auto;
+    height:2em;
+}
+#Sticky{
+    /*Structure*/
+    width:100%;
+    height: 3vh;
+    bottom: 5%;
+    position: fixed;
+    background-color: var(--DarkBlue);
+    left:0;
+    bottom: 0;
+    /*Content*/
+    padding:2% 0 1.5% 0;
+}
+
+/*Home*/
+button.big{
+    /*Structure*/
+    width: 90vw;
+    height: 43vw;
+    margin: 0 auto 5% auto;
+    border:none;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center; 
+    box-shadow: 0 0 5px 2px rgb(10, 10,40);
+    /*Content*/
+    font-weight: bold;
+    color:white;
+}
+#destinations{
+    background-image: url("../images/Destinations.jpg");
+    font-size: 12vw;
+}
+#services{
+    background-image: url("../images/Services.jpg");
+    font-size: 14vw;
+}
+#plans{
+    display:none;
+}
+
+/*Destinations*/
+.title#destinations{
+    background-position:-5vw 0;
+}
+h3{
+font-size: 12vw;
+margin-bottom: 0;
+}
+h5{
+    color:var(--Gray);
+    margin: 0 auto 2% auto;
+}
+button{
+    /*Structure*/
+    width:50%;
+    height:8%;
+    border-radius: 15vw;
+    border:none;
+    background-color: var(--LightBlue);
+    margin: 2% auto 15% auto;
+    background-image: url(../images/glass.png);
+    background-size: 110% auto;
+    background-repeat: no-repeat;
+    background-position: center; 
+    box-shadow: 1px 3px 5px 2px rgb(10, 10,40);
+    /*Content*/
+    font-size: 7vw;
+    font-weight: bold;
+}
+/*Services*/
+.title#services{
+    background-position:0 0;
+}
+table{
+    margin:2vh auto;
+    width:95%;
+    border-collapse: collapse;
+    background-color:var(--Transparent);
+}
+tr{
+    height: 10vh;
+}
+tr:first-of-type{
+    height: 5vh;
+}
+td{
+    padding:1%;
+    border: solid 1px black;
+}
+dd{
+    width:90%;
+    text-align: justify;
+    margin: 0 auto;
+}
+dt{
+    font-size: 5vw;
+    font-weight: bold;
+    margin: 10% auto 1% auto;
+}
+.detail{
+color: rgb(212, 211, 211);
+font-size:3vw;
+}
+
+/*Contact*/
+
+.title#contact{
+    background-image: url(../images/prayer.jpg);
+    font-size:15vw;
+    background-position: 0 0;
+}
+form{
+    margin: 5% auto;
+    width: 80%;
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 1%;
+    }
+    label{
+    text-align: right;
+    margin-right: 5px;
+    }
+    #submit{
+    width: 20%;
+    }
+@media all and (min-width:768px){
+    /*General*/
+    ul{
+        list-style: none;
+    }
+    h1{
+        font-size: 2.5em;
+    }
+    body{
+        font-size: 2vw;
+        background-size: auto 100vh;
+    }
+    nav{
+        padding:0;
+        background-color: transparent;
+        box-shadow: none;
+        position:fixed;
+        width:20vw;
+        max-width: 200px;
+        overflow:auto;
+    }
+    nav ul{
+        padding:0;
+    }
+    nav li{
+        background-color: #1d3a52;
+        width:90%;  
+        padding:15% 0;
+        clear: both;
+    }
+    nav li:hover{
+        padding-right:9%;
+        background-color: var(--DarkBlue);
+    }
+    main{
+        padding: 5% 0 2% 1.75%;
+        width:80vw;
+        margin:0 auto 0 12vw;
+        background-color: var(--Transparent);
+    }
+    blockquote{
+        width:80%;
+    }
+    .current{
+        padding: 15% 4.5%;
+        background-color: var(--DarkBlue);
+        border-radius: 0;
+    }
+    .current:hover{
+        padding: 15% 4.5%;
+    }
+    .title{
+        border-radius: 5.5vw;
+        width:85%;
+        background-size: 80vw auto;
+        background-clip: padding-box;
+    }
+    .NotMobile {
+        display:inline;
+    }
+    #bottom:hover{
+        background-color: #1d3a52;
+        padding: 15% 0;
+    }
+    #bottom{
+        width: 90%;
+        height: 40vh;
+    }
+    #logo{
+        background-color: var(--DarkBlue);
+        margin:0 auto;
+        float:left;
+        width: 99%;
+        height: auto;
+        box-shadow: -5px 1px 5px 2px black;
+    }
+    #Sticky{
+        display:none;
+    }
+    #copyright{
+        margin-top:5vh;
+    }
+    #git{
+        margin:-3vh 25% auto 0;
+    }
+
+    /*Home*/
+    button.big{
+        box-shadow: 0 0 1.2vw 0.4vw black;
+        width:80%;
+        height: auto;
+    }
+    button.big:hover{
+        border: none;
+        box-shadow: 0 0 5px 2px rgb(238, 238, 238);
+    }
+
+    #destinations{
+        font-size:7vw;
+    }
+    #services{
+        font-size:7vw;
+    }
+    #plans{
+        font-size:7vw;
+        display:block;
+    }
+    #banner{
+        width:70%;
+        height:auto;
+        margin: 0 auto;
+    }
+
+    /*Destination*/
+    h3{
+        font-size:6vw;
+    }
+    h4{
+        display:inline;
+    }
+    h5{
+        font-size:2vw;
+    }
+    img{
+        width:80%;
+    }
+    button{
+        border:inset 4px transparent;
+        font-size: 4vw;
+        margin-bottom: 5vh;
+    }
+    button:hover{
+        border:inset 4px var(--Gold);
+    }
+    .title#destinations {
+        height: 10vw;
+        padding:5vh 0;
+        background-position: 17vw -15vh;
+        font-size: 4.5em;
+    }
+    /*Services*/
+    table{
+        width: 80%;
+    }
+    dt{
+        font-size: 1.8em;
+    }
+    dl{
+        width: 80%;
+        margin: 0 auto;
+    }
+    dd{
+        width:100%;
+    }
+    .detail{
+        font-size:0.8em;
+    }
+    .title#services{
+        height: 13vw;
+        padding: 3vh 0;
+        font-size: 6em;
+        background-position: 15.5vw -15vh;
+    }
+    /*Plans*/
+    .pack span{
+        margin: 10% 0 0 0;
+        display: block;
+        color: var(--Gold);
+        font-size: 1.5em;
+    }
+    .pack p{
+        width:50%;
+        margin: 0 auto;
+        text-align: justify;
+    }
+    #plans{
+        background-image: url(../Images/plans.jpg )
+    }
+    .title#plans{
+        height: 13vw;
+        padding: 3vh 0;
+        font-size: 6em;
+        background-position: 15.5vw -20vh;
+    }
+    /*Contact*/
+    .title#contact{
+        height: 14vw;
+        padding: 2vh 0;
+        font-size: 6em;
+        background-position: 15.5vw -22vh;
+    }
+        /*staff*/
+        .title#staff{
+            height: 13vw;
+            padding: 3vh 0;
+            font-size: 6em;
+            background-position: 15.5vw -20vh;
+            background-image: url(../Images/staff.jpg )
+        }
+        #employee{
+            margin: 0 auto;
+            width: 90%;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        #employee img{
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        #employee h4{
+            color: var(--Gold);
+            margin:0;
+        }
+        /*Testimonials*/
+        #testimonials{
+            background-image: url(../images/testimonials.jpg);
+        }
+        .title#testimonials{
+            height: 13vw;
+            padding: 3vh 0;
+            font-size: 5em;
+            background-position: 15.5vw -20vh;
+        }
+        #warning{
+            text-align: left;
+        }
+}
+@media all and (min-width:1200px){
+    nav{
+        font-size: 0.8em;
+    }
+body{
+    background-size: 145% auto;
+}
+}

@@ -1,0 +1,259 @@
+body{
+    margin:0;
+    background-image: url("../images/BG.jpg");
+    background-size: 350% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-size: 4vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:white;
+}
+body dt,h1,h3,button,a{
+    color: #F5D098;
+}
+nav{
+    width: 100%;
+    background-color: #173248;
+    overflow:auto;
+    box-shadow: 0px 5px 10px black;
+    padding: 2% 0;
+
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+main{
+    background-color: rgba(16, 35, 51, 0.5);
+    padding:  6% 0 12% 0;
+    overflow: auto;
+}
+main h5{
+    padding:1%;
+    margin:-2% auto;
+    color:rgb(200,200,200);
+}
+main dl{
+    width:90%;
+    margin:0 auto;
+    background-color: rgba(69, 142, 156, 0.5);
+    padding: 1%;
+    border-radius: 45px;
+}
+main dt{
+text-align: center;
+}
+main dd{
+width: 85%;
+text-align:justify;
+margin: 2% auto;
+}
+main blockquote{
+    text-align: justify;
+}
+main blockquote span{
+    background-color: #173248;
+    border:solid 2px black;
+}
+main table{
+    background-color: rgba(69, 142, 156, 0.5);
+    padding: 5%;
+    border-radius: 45px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+main table td{
+    border-top: solid 1px #173248;
+}
+main div{
+    display:grid;
+    grid-template: 1fr;
+    grid-gap: 5%;
+}
+main div article{
+    position: relative;
+}
+main div article img{
+    float:left;
+    width: 90vw;
+    height: 45vw;
+    box-shadow: 0 0 5px 2px rgb(10, 10,40);
+    margin: 0 3vw 
+}
+
+main p{
+    width:60%;
+    text-align: justify;
+    position: relative;
+    margin: 0% 0% 20% 10%;
+}
+footer{
+    background-color: #173248;
+}
+.line{
+    width: 80%;
+    margin:0 auto 5% auto;
+    height: 2px;
+    background-color: white;
+}
+.NotMobile{
+    display:none;
+}
+.NotDesktop{
+    width:100%;
+    bottom: 5%;
+    position: fixed;
+    background-color: #173248;
+    left:0;
+    bottom: 0;
+
+    padding: 3% 0;
+}
+.detail{
+    font-size: 70%;
+    color: rgb(200,200,200);
+}
+.current{
+    background-color: #238596;
+    padding: 1%;
+    border-radius: 15px;
+}
+#logo{
+    width: 100%;
+    height: auto;
+
+    display:block;
+    margin: 0 auto;
+}
+#ff14{
+margin: 5%;
+width: 90%;    
+}
+#sao{
+margin: 5%;
+width: 90%;
+}
+#ngnl{
+    margin: 5%;
+    width: 90%;
+}
+#banner{
+    width:70%;
+    height: auto;
+}
+#destinations h1 {
+    position: absolute;
+    width: 80%;
+    margin: 15% 10% 15% 10%;
+
+    color:white;
+    font-size: 12vw;
+}
+#services h1 {
+    position: absolute;
+    width: 70%;
+    margin: 15%;
+
+    
+    color:white;
+    font-size: 15vw;
+}
+#copyright{
+    margin-top:10%;
+    margin-bottom: 0;
+    width:70%;
+    color:rgb(200,200,200);
+    font-size: 85%;
+}
+#git{
+    top:-17%;
+    right: 2%;
+    position: absolute;
+    float:right;
+}
+@media all and (min-width:768px){
+    body{
+        font-size: 1.5em;
+    }
+    nav{
+        padding: 1% 0;
+        height: 0.5%;
+        font-size:1.7vw;
+    }
+    nav div {
+        padding-top: 1.25%;
+        margin:0;
+    }
+    nav a{
+        border-radius: 15px;
+        padding: 5px;
+    }
+    nav div a:hover{
+        background-color: #238596;
+        padding: 0.8%;
+        border-radius: 15px;;
+    }
+    main{
+        width:80%;
+        margin: 0 10% 0 10%;
+        padding-bottom: 3%;
+    }
+    main table{
+        width: 90%;
+        margin-top:2%;
+    }
+    main blockquote{
+        width:80%;
+        margin: 0 auto;
+    }
+    main div article img{
+        width: 60vw;
+        height: 20vw;
+        margin:0 9vw 0 9vw;
+    }
+    .NotDesktop{
+      display: none;
+    }
+    .NotMobile{
+        display:block;    
+    }
+    .current{
+        padding:0.8%;
+    }
+    #destinations h1{
+        font-size: 2em;
+    }
+    #services h1{
+        font-size: 2em;
+    }
+    #logo{
+        float:left;
+        width: 20%;
+    }
+    #apply{
+        margin:-1% -15%;
+        padding:1%;
+        border-radius: 15px;
+        background-color: #112433;
+        float:right;
+    }
+    #apply:hover{
+        background-color: #238596;
+        color:white;
+    }
+    #copyright{
+        margin-top:20%;
+    }
+    #plans h1 {
+        position: absolute;
+        width: 70%;
+        margin: 15%;
+    
+        
+        color:white;
+        font-size: 2em;
+    }
+}
