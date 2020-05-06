@@ -1,0 +1,2 @@
+# Isekai-Insurance
+Static website
