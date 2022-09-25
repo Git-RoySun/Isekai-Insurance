@@ -1,2 +1,2 @@
 # Isekai-Insurance
-Static website
+Static website of an (pretend) Insurance Company that offers after life insurance.
